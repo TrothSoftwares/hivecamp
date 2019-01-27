@@ -31,9 +31,6 @@
         
         <!-- Magnific Popup -->
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        
-        <!-- DateTimepicker -->
-        <link rel="stylesheet" href="assets/css/datepicker.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,7 +66,7 @@
                         </div>
                         <!--  END Header Logo  -->
                         <!--  Classic menu, responsive menu classic  -->
-                        <div id="menu-classic">
+                        <div id="sidemenu">
                             <div class="menu-holder">
                                 <ul>
                                     <li class="submenu">
@@ -129,7 +126,7 @@
                         </div>
                         <!--  END Classic menu, responsive menu classic  -->
                         <!--  Button for Responsive Menu Classic  -->
-                        <div id="menu-responsive-classic">
+                        <div id="menu-responsive-sidemenu">
                             <div class="menu-button">
                                 <span class="bar bar-1"></span>
                                 <span class="bar bar-2"></span>
@@ -148,7 +145,7 @@
                 <div id="flexslider-nav" class="fullpage-wrap home">
                     <ul class="slides">
                         <li style="background-image:url(assets/img/home1.jpg)">
-                            <div class="container text center">
+                            <div class="container text left">
                                 <h1 class="white flex-animation">Viride <br> luxury hotels</h1>
                                 <h2 class="white flex-animation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Veniam, facilis.</h2>
                                 <a href="#" class="shadow btn-alt small white margin-bottom-null margin-left-null flex-animation">More info</a>
@@ -156,7 +153,7 @@
                             <div class="gradient dark"></div>
                         </li>
                         <li style="background-image:url(assets/img/home2.jpg)">
-                            <div class="text container">
+                            <div class="text container left">
                                 <h1 class="white flex-animation no-opacity">Great holiday<br> for all the family</h1>
                                 <h2 class="white flex-animation no-opacity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Veniam, facilis.</h2>
                                 <a href="#" class="shadow btn-alt small activetwo margin-bottom-null flex-animation no-opacity">More info</a>
@@ -170,190 +167,105 @@
                 </div>
                 <!--  END Slider  -->
                 <div id="home-wrap" class="content-section fullpage-wrap">
-                    <div class="row margin-leftright-null grey-background">
-                        <div class="container text">
-                            <!-- Booking Section -->
-                            <div id="booking" class="text dark-background">
-                                <form id="booking-form">
-                                    <div class="row">
-                                        <div class="col-md-3 text-center">
-                                            <label>Check in date</label>
-                                            <i class="icon ion-ios-arrow-thin-down"></i>
-                                            <input data-toggle="datepicker" class="form-field form-date" id="checkin" type="text" placeholder="Arrival date" readonly="true">
-                                        </div>
-                                        <div class="col-md-3 text-center">
-                                            <label>Check out date</label>
-                                            <i class="icon ion-ios-arrow-thin-down"></i>
-                                            <input data-toggle="datepicker" class="form-field form-date" id="checkout" type="text" placeholder="Departure date" readonly="true">
-                                        </div>
-                                        <div class="col-md-3 text-center">
-                                            <label>Adults</label>
-                                            <i class="icon ion-ios-arrow-thin-down"></i>
-                                            <select class="form-field" name="adults" required>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-3 text-center">
-                                            <label>Childrens</label>
-                                            <i class="icon ion-ios-arrow-thin-down"></i>
-                                            <select class="form-field" name="childrens" required="">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-12 text-center">
-                                            <div class="submit-area">
-                                                <input type="submit" id="submit-contact" class="btn-alt big" value="Book Now">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <!-- END Booking Section -->
-                        </div>
-                    </div>
                     <!-- Section About -->
-                    <div class="row margin-leftright-null grey-background">
+                    <div class="row margin-leftright-null">
                         <div class="container">
                             <div class="col-md-12 padding-leftright-null">
                                 <div class="text text-center">
-                                    <h3 class="big dark">The best <mark>Luxury</mark> Hotels in Venice, Italy.</h3>
                                     <p class="heading center line margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, odit quam dolores incidunt architecto debitis repellendus atque asperiores, est aut deleniti nesciunt tenetur. Omnis ullam, iusto voluptatibus neque quaerat amet accusantium suscipit voluptas quod impedit.</p>
-                                    <div class="col-md-6">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt necessitatibus natus hic suscipit dolorem, veniam excepturi. Ut quibusdam animi deserunt voluptates, sint nostrum eligendi amet tempore accusamus reprehenderit doloremque modi?</p>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt necessitatibus natus hic suscipit dolorem, veniam excepturi. Ut quibusdam animi deserunt voluptates, sint nostrum eligendi amet tempore accusamus reprehenderit doloremque modi?</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- END Section About -->
-                    <!-- Section Services -->
-                    <div class="row margin-leftright-null grey-background" id="home-square">
-                        <div class="container text">
-                            <div class="col-md-6 padding-leftright-null white-background">
-                                <div data-responsive="parent-height" data-responsive-id="restaurant" class="text">
-                                    <h2 class="sm black margin-bottom-small">Restaurant</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum illo doloribus sunt error, numquam voluptates at reiciendis sequi, fuga porro. Nisi, suscipit exercitationem deserunt obcaecati quas, alias ut modi beatae minus nobis deleniti recusandae amet, eum animi harum repellendus quis!</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At soluta accusantium aliquid ducimus animi iusto architecto, minus possimus beatae assumenda eius nulla, adipisci qui sit.</p>
-                                    <a href="restaurant.html" class="btn-pro color">read more</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 padding-leftright-null">
-                                <div data-responsive="child-height" data-responsive-id="restaurant" class="bg-img" style="background-image:url(assets/img/home-food2.jpg)"></div>
-                            </div>
-                            <div class="flex-order-md">
-                                <div class="col-md-6 padding-leftright-null flex-column-push-md">
-                                    <div data-responsive="child-height" data-responsive-id="rooms" class="bg-img" style="background-image:url(assets/img/beach.jpg)"></div>
-                                </div>
-                                <div class="col-md-6 padding-leftright-null white-background flex-column-pull-md">
-                                    <div data-responsive="parent-height" data-responsive-id="rooms" class="text">
-                                        <h2 class="sm black margin-bottom-small">Location</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum illo doloribus sunt error, numquam voluptates at reiciendis sequi, fuga porro. Nisi, suscipit exercitationem deserunt obcaecati quas, alias ut modi beatae minus nobis deleniti recusandae amet, eum animi harum repellendus quis!</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At soluta accusantium aliquid ducimus animi iusto architecto, minus possimus beatae assumenda eius nulla, adipisci qui sit.</p>
-                                        <a href="location.html" class="btn-pro color">read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row margin-leftright-null">
-                        <div class="container text text-center padding-bottom-null">
-                            <div class="col-md-12 padding-leftright-null">
-                                <h3 class="big title dark margin-bottom-small">Our Rooms</h3>
-                                <p class="heading full center margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, odit quam dolores incidunt architecto debitis repellendus atque asperiores, est aut deleniti nesciunt tenetur. Omnis ullam, iusto voluptatibus neque quaerat amet accusantium suscipit voluptas quod impedit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END Section Services -->
-                    <!-- Rooms Carousel -->
-                    <div class="row margin-leftright-null" id="rooms">
-                        <div class="container text">
-                            <div class="rooms-carousel">
-                                <div class="room">
-                                    <div class="col-md-6 padding-leftright-null">
-                                        <div class="content">
-                                            <i class="icon ion-ios-star color"></i>
-                                            <i class="icon ion-ios-star color"></i>
-                                            <i class="icon ion-ios-star color"></i>
-                                            <i class="icon ion-ios-star-half color"></i>
-                                            <h3>Deluxe Room</h3>
-                                            <span class="category">with sea view and balcony</span>
-                                            <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas corporis. Maxime sapiente, adipisci laborum.</p>
-                                            <a href="#" class="btn-alt small color">Room Details</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 padding-leftright-null">
-                                        <div class="image" style="background-image:url(assets/img/room2.jpg)"></div>
-                                    </div>
-                                </div>
-                                <div class="room">
-                                    <div class="col-md-6 padding-leftright-null">
-                                        <div class="content">
-                                            <i class="icon ion-ios-star color"></i>
-                                            <i class="icon ion-ios-star color"></i>
-                                            <i class="icon ion-ios-star color"></i>
-                                            <i class="icon ion-ios-star color"></i>
-                                            <h3>Presidential Suite</h3>
-                                            <span class="category">with sea view and balcony</span>
-                                            <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas corporis. Maxime sapiente, adipisci laborum.</p>
-                                            <a href="#" class="btn-alt small color">Room Details</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 padding-leftright-null">
-                                        <div class="image" style="background-image:url(assets/img/home-rooms.jpg)"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END Rooms Carousel -->
-                    <!-- Testimonial Carousel -->
-                    <div class="row margin-leftright-null">
-                        <div class="bg-img overlay" style="background-image:url(assets/img/testimonials.jpg)">
-                            <div class="col-md-12">
-                                <div class="text text-center padding-bottom-null">
-                                    <h3 class="big white margin-bottom">Our Cients Say</h3>
-                                </div>
-                            </div>
-                            <!-- Testimonials -->
-                            <section class="testimonials-carousel col-md-12">
-                                <div class="item col-md-8 col-md-offset-2 padding-leftright-null">
-                                    <div class="container text text-center padding-top-null padding-bottom-null">
-                                        <p class="heading center grey-light margin-bottom-small">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum reprehenderit earum veritatis, libero sunt illum."</p>
-                                        <em>Alessia Simpson</em>
-                                    </div>
-                                </div>
-                                <div class="item col-md-8 col-md-offset-2 padding-leftright-null">
-                                    <div class="container text text-center padding-top-null padding-bottom-null">
-                                        <p class="heading center grey-light margin-bottom-small">"First. Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Fuga, reprehenderit."</p>
-                                        <em>Joe Doe</em>
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- END Testimonials -->
-                        </div>
-                    </div>
-                    <!-- Testimonial Carousel -->
-                    <div class="row margin-leftright-null">
-                        <div class="container text text-center padding-bottom-null">
-                            <div class="col-md-12 padding-leftright-null">
-                                <h3 class="big title dark margin-bottom-small">Our Services</h3>
-                                <p class="heading full center margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, odit quam dolores incidunt architecto debitis repellendus atque asperiores, est aut deleniti nesciunt tenetur. Omnis ullam, iusto voluptatibus neque quaerat amet accusantium suscipit voluptas quod impedit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Services Box -->
-                    <div class="row margin-leftright-null" id="home-services">
-                        <div class="container text">
+                        <div class="container text padding-top-null">
+                            <!--  Services Section  -->
                             <section id="box-items" data-isotope="load-simple">
-                                <div class="masonry-items equal three-columns">   
+                                <div class="masonry-items equal three-columns">
+                                    <!--  Single Service -->
+                                    <div class="one-item">
+                                        <div class="image-bg" style="background-image:url(assets/img/home-food2.jpg)"></div>
+                                        <div class="preview">
+                                            <h4>Food</h4>
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <h3>Food</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ipsam.</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <a href="restaurant.html" class="link"></a>
+                                        </div>
+                                    </div>
+                                    <!--  END Single Service -->
+                                    <div class="one-item">
+                                        <div class="image-bg" style="background-image:url(assets/img/beach.jpg)"></div>
+                                        <div class="preview">
+                                            <h4>Beach</h4>
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <h3>Beach</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ipsam.</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <a href="location.html" class="link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="one-item">
+                                        <div class="image-bg" style="background-image:url(assets/img/home-rooms.jpg)"></div>
+                                        <div class="preview">
+                                            <h4>Rooms</h4>
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <h3>Rooms</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ipsam.</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <a href="rooms-style1.html" class="link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="one-item small">
+                                        <div class="image-bg" style="background-image:url(assets/img/spa.jpg)"></div>
+                                        <div class="preview">
+                                            <h4>Spa</h4>
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <h3>Spa</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ipsam.</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <a href="rooms-style2.html" class="link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="one-item static">
+                                        <div class="image-bg"></div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <h3>About us</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ipsam.</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <a href="blog.html" class="link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="one-item small">
+                                        <div class="image-bg" style="background-image:url(assets/img/home-bar.jpg)"></div>
+                                        <div class="preview">
+                                            <h4>Party</h4>
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <h3>Party</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ipsam.</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <a href="location.html" class="link"></a>
+                                        </div>
+                                    </div>
                                     <div class="one-item">
                                         <div class="image-bg" style="background-image:url(assets/img/golf.jpg)"></div>
                                         <div class="preview">
@@ -369,46 +281,38 @@
                                         </div>
                                     </div>
                                     <div class="one-item">
-                                        <div class="image-bg" style="background-image:url(assets/img/spa.jpg)"></div>
+                                        <div class="image-bg" style="background-image:url(assets/img/home-contact.jpg)"></div>
                                         <div class="preview">
-                                            <h4>Spa</h4>
+                                            <h4>Get in Touch</h4>
                                         </div>
                                         <div class="content">
                                             <div class="text">
-                                                <h3>Spa</h3>
+                                                <h3>Get in Touch</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ipsam.</p>
                                             </div>
                                             <div class="line"></div>
-                                            <a href="spa.html" class="link"></a>
+                                            <a href="contact-1.html" class="link"></a>
                                         </div>
                                     </div>
-                                    <div class="one-item">
-                                        <div class="image-bg" style="background-image:url(assets/img/museum.jpg)"></div>
+                                    <div class="one-item small">
+                                        <div class="image-bg" style="background-image:url(assets/img/news.jpg)"></div>
                                         <div class="preview">
-                                            <h4>Guide</h4>
+                                            <h4>Last News</h4>
                                         </div>
                                         <div class="content">
                                             <div class="text">
-                                                <h3>Guide</h3>
+                                                <h3>Last News</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ipsam.</p>
                                             </div>
                                             <div class="line"></div>
-                                            <a href="activities.html" class="link"></a>
+                                            <a href="blog.html" class="link"></a>
                                         </div>
                                     </div>
                                 </div>
                             </section>
+                            <!--  END Services Section  -->
                         </div>
                     </div>
-                    <!-- END Services Box -->
-                    <!-- CTA Section -->
-                    <div class="row padding-md margin-leftright-null grey-background">
-                        <div class="col-md-12 text-center">
-                            <h4 class="big margin-bottom-small black">Get 15% Off Today</h4>
-                            <a href="https://themeforest.net/item/dap-creative-multipurpose-html-template/17672552" target="_blank" class="btn-alt small margin-null">Book Now</a>
-                        </div>
-                    </div>
-                    <!-- END CTA Section -->
                 </div>
             </div>
             <!--  END Page Content, class footer-fixed if footer is fixed  -->
@@ -485,7 +389,6 @@
         <script src="assets/js/jquery.min.js"></script>
         <!-- All js library -->
         <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-        <script src="assets/js/datepicker.min.js"></script>
         <script src="assets/js/jquery.flexslider-min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/isotope.min.js"></script>
